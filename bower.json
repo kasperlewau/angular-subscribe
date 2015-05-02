@@ -1,0 +1,27 @@
+{
+  "name": "angular-subscribe",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kasperlewau/angular-subscribe",
+  "authors": [
+    "Kasper Lewau <lewauu@gmail.com> (https://github.com/kasperlewau)"
+  ],
+  "description": "automatic angular $rootScope.$on deregistration",
+  "main": "dist/angular-subscribe.js",
+  "keywords": [
+    "angular",
+    "angular-on",
+    "angular-subscribe",
+    "angular-unsubscribe",
+    "angular-pubsub"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}
