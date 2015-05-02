@@ -1,3 +1,4 @@
+![travisci](https://travis-ci.org/kasperlewau/angular-subscribe.svg?branch=master)
 ## angular-subscribe
 Adds a `$subscribe` method to the `$scope` prototype.
 Works just like `$on`, but handles `$destroy` cleanup automatically.
