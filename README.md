@@ -1,40 +1,29 @@
-![travisci](https://travis-ci.org/kasperlewau/angular-subscribe.svg?branch=master)
-## angular-subscribe
-Adds a `$subscribe` method to the `$scope` prototype.
-Works just like `$on`, but handles `$destroy` cleanup automatically.
+## angular-subscribe ![travisci](https://travis-ci.org/kasperlewau/angular-subscribe.svg?branch=master)
+> Adds a `$subscribe` method to the `$scope` prototype. $on listeners with automagic de-registration.
 
-#### Installation::Bower
+### installation
 ```js
+  /** with bower **/
   bower install angular-subscribe --save
+  <script src="path/to/angular-subscribe/dist/angular-subscribe.js"></script>
 
-  <script src="path/to/angular-subscribe/dist/angular-subscribe.js">
-```
-
-#### Installation::JSPM
-```js
+  /** with jspm **/
   jspm install angular-subscribe --save
-
   import 'angular-subscribe';
 ```
-
+### usage
 ```js
-angular.module('your_module_name', [ 'angular-subscribe' ]);
+  angular.module('your_module_name', [ 'angular-subscribe' ]);
 ```
-
-### Example usage
 ```js
   $scope.$subscribe('event', callbackFn);
-```
-
-**becomes:**
-
-```js
+  /** becomes **/
   var unsub = $rootScope.$on('event', callbackFn);
   $scope.$on('$destroy', unsub);
 ```
 
-### Running tests
+### testing
 `npm install; npm test`
 
 ### License
-MIT
+MIT © [Kasper Lewau](github.com/kasperlewau)
