@@ -1,4 +1,4 @@
-## angular-subscribe ![travisci](https://travis-ci.org/kasperlewau/angular-subscribe.svg?branch=master)
+## angular-subscribe [![travisci](https://travis-ci.org/kasperlewau/angular-subscribe.svg?branch=master)](https://travis-ci.org/kasperlewau/angular-subscribe)
 > Adds a `$subscribe` method to the `$scope` prototype. $on listeners with automagic de-registration.
 
 ### installation
